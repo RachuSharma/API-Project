@@ -1,0 +1,40 @@
+.suggestions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    margin-bottom: 20px;
+  }
+  
+  .card {
+    flex: 1 1 160px;
+    background-color: #ede7f6;
+    border-radius: 10px;
+    padding: 12px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  
+  .card:hover {
+    background-color: #ddd3f2;
+  }
+  
+  .icon-title {
+    display: flex;
+    align-items: center;
+    margin-bottom: 6px;
+  }
+  
+  .icon {
+    margin-right: 8px;
+    font-size: 18px;
+  }
+  
+  .title {
+    font-weight: bold;
+  }
+  
+  .description {
+    font-size: 13px;
+    color: #555;
+  }
+  

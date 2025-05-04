@@ -1,0 +1,21 @@
+<div class="container">
+  <h1>Create Captions</h1>
+
+  <app-input-box (generate)="generateTopic($event)"></app-input-box>
+
+  <app-suggestions
+    [suggestions]="suggestions"
+    (select)="selectSuggestion($event)">
+  </app-suggestions>
+
+  <div *ngIf="isLoading" class="loading">
+    Please wait, generating your caption...
+  </div>
+
+  <div *ngIf="response" class="response-box">
+    <h3>AI Response</h3>
+    <p>{{ response }}</p>
+  </div>
+
+  <app-actions></app-actions>
+</div>

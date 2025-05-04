@@ -1,0 +1,23 @@
+.response-box {
+  background-color: #f5f2ff7a;             
+  border: 1px solid #d2c4f0;              
+  border-left: 5px solid #7530c4;         
+  padding: 16px 20px;
+  border-radius: 8px;
+  margin-top: 30px;
+  font-size: 16px;
+  color: #333;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+.response-box h3 {
+  margin-top: 0;
+  color: #5c2ca3;
+  font-size: 18px;
+}
+
+.loading {
+  font-style: italic;
+  color: #7a43b9;
+  margin: 16px 0;
+}
