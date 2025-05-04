@@ -7,18 +7,35 @@ It was built for a small assignment to show how the frontend and backend work to
 
 ### 🚀 Getting Started
 ```bash
+## ▶️ Running the Tasks
+
+### Task 1 – Fullstack Application (Angular + NestJS)
 
 ###  Frontend
 
-cd frontend-task
-npm install
-ng serve
+cd frontend-task         # Go to frontend folder
+npm install              # Install dependencies
+ng serve                 # Start Angular dev server (default port: 4200)
+
 
 ###  Backend
 
-cd backend-task
-npm install
-npm run start
+cd backend-task          # Go to backend folder
+npm install              # Install dependencies
+npm run start            # Start the server (default port: 3000)
+
+
+
+## ▶️ Running Task 2 (FizzBuzz)
+
+### From root: (FizzBuzz)
+node task-2/index.js          # Runs from 1 to 100
+node task-2/index.js 200      # Runs from 1 to 200
+
+## From inside task-2  : (FizzBuzz)
+cd task-2
+node index.js
+
 
 
 ## ✨ Features
@@ -33,15 +50,15 @@ npm run start
 
 ## 🧩 Technologies
 
-| Layer     | Technology |
-|-----------|------------|
-| Frontend  | Angular (Standalone components) |
-| Backend   | NestJS |
-| Styling   | Custom CSS (No Bootstrap) |
-| Integration | HttpClient with mock delay |
+| Folder         | Description                                     |
+|----------------|-------------------------------------------------|
+| frontend-task  | Angular frontend app for the project            |
+| backend-task   | NestJS backend API handling AI prompt requests  |
+| task-2         | Standalone FizzBuzz script in JavaScript        |
 
 
-## 📂 Project Structure
+
+## 📂 File Structure
 
 
 API-Project/
@@ -58,7 +75,12 @@ API-Project/
 │       ├── app.module.ts
 │       └── main.ts
 │
+├── task-2/                 # Task 2 – FizzBuzz
+│   ├── index.js            # Entry point for FizzBuzz
+│   └── fizzbuzz.js         # FizzBuzz logic using multiples
+│
 └── README.md
+
 
 
 
