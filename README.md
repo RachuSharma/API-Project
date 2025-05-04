@@ -1,4 +1,4 @@
-# 📸 Caption Generator – API Project (Angular + NestJS)
+### 📸 Caption Generator – API Project (Angular + NestJS)
 
 A full-stack web application built with **Angular** (frontend) and **NestJS** (backend) that allows users to generate social media post captions using predefined topics or custom inputs.
 
@@ -7,7 +7,7 @@ This was built as part of a small API-focused assignment to demonstrate frontend
 ---
 
 
-## 🚀 Getting Started
+### 🚀 Getting Started
 
 ###  Frontend
 
