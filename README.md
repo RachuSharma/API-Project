@@ -4,8 +4,6 @@ This is a full-stack web app using Angular (frontend) and NestJS (backend) that 
 
 It was built for a small assignment to show how the frontend and backend work together with a clean and simple structure.
 
----
-
 
 ### 🚀 Getting Started
 ```bash
@@ -22,7 +20,6 @@ cd backend-task
 npm install
 npm run start
 
----
 
 ## ✨ Features
 
@@ -33,7 +30,6 @@ npm run start
 - ✅ Separate components: input box, suggestions, actions, response box
 - 📦 Backend API with a POST endpoint at `/askAi`
 
----
 
 ## 🧩 Technologies
 
@@ -44,23 +40,25 @@ npm run start
 | Styling   | Custom CSS (No Bootstrap) |
 | Integration | HttpClient with mock delay |
 
----
 
 ## 📂 Project Structure
+
+
 API-Project/
-├── frontend-task/ # Angular project
-│ └── src/app/
-│ ├── input-box/
-│ ├── suggestions/
-│ ├── actions/
-│ └── app.component.ts
+├── frontend-task/          # Angular frontend
+│   └── src/app/
+│       ├── input-box/      # Text input and generate button component
+│       ├── suggestions/    # Suggested topic cards component
+│       ├── actions/        # Action buttons at the bottom
+│       └── app.component.ts
 │
-├── backend-task/ # NestJS project
-│ └── src/
-│ ├── ask-ai.controller.ts
-│ ├── app.module.ts
-│ └── main.ts
+├── backend-task/           # NestJS backend
+│   └── src/
+│       ├── ask-ai/         # Controller handling /askAi endpoint
+│       ├── app.module.ts
+│       └── main.ts
 │
 └── README.md
+
 
 
