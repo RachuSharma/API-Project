@@ -21,3 +21,8 @@
   color: #7a43b9;
   margin: 16px 0;
 }
+.container {
+  padding: 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
