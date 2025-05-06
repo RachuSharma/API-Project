@@ -1,97 +1,111 @@
 ### 📸 Caption Generator – API Project (Angular + NestJS)
 
-This is a full-stack web app using Angular (frontend) and NestJS (backend) that helps users generate social media captions. Users can either type their own idea or pick from ready-made topics.
+This is a full‑stack web app using **Angular** (frontend) and **NestJS** (backend) that helps users generate social‑media captions.  
+Users can type their own topic or click a ready‑made suggestion.
 
-It was built for a small assignment to show how the frontend and backend work together with a clean and simple structure.
+The project was built for a small assignment to demonstrate clean frontend / backend integration and modular code structure.
 
-
-### 🚀 Getting Started
-```bash
+---
 
 ### 🚀 Getting Started
 
 #### ▶️ Clone the Repository
-
-## To run this app, clone the repository and install dependencies
-
+```bash
 git clone https://github.com/RachuSharma/API-Project.git
 cd API-Project
+```
 
+---
 
-## ▶️ Running the Tasks
+### ▶️ Full‑stack Mode  
+Serve the built Angular app directly from NestJS.
+```bash
+# Build Angular
+cd frontend-task
+npm install
+npm run build          # outputs: dist/frontend-task
 
-### Task 1 – Fullstack Application (Angular + NestJS)
+# Start NestJS (serves the Angular build)
+cd ../backend-task
+npm install
+npm run start
+```
+Open → <http://localhost:3000>
 
-###  Frontend
+---
 
-cd frontend-task         # Go to frontend folder
-npm install              # Install dependencies
-ng serve                 # Start Angular dev server (default port: 4200)
+### ▶️ Developer Mode (run separately)
 
+##### Frontend (Angular)
+```bash
+cd frontend-task
+npm install
+ng serve
+```
+<http://localhost:4200>
 
-###  Backend
+##### Backend (NestJS)
+```bash
+cd backend-task
+npm install
+npm run start
+```
+<http://localhost:3000>
 
-cd backend-task          # Go to backend folder
-npm install              # Install dependencies
-npm run start            # Start the server (default port: 3000)
+---
 
-
-
-## ▶️ Running Task 2 (FizzBuzz)
-
-### From root: (FizzBuzz)
-node task-2/index.js          # Runs from 1 to 100
-node task-2/index.js 200      # Runs from 1 to 200
-
-## From inside task-2  : (FizzBuzz)
+### ▶️ Task 2 – FizzBuzz
+From project root:
+```bash
+node task-2/index.js          # runs 1–100
+node task-2/index.js 200      # runs 1–200
+```
+Or:
+```bash
 cd task-2
 node index.js
+```
 
-
+---
 
 ## ✨ Features
+- 📝 Input field for custom topic  
+- 💡 Suggestion cards (Promotional, Launch, etc.)  
+- ⚡ Mock AI caption returned from `/askAi` endpoint  
+- ⏳ Loading indicator while fetching  
+- 🧩 Stand‑alone Angular components (input, suggestions, actions, response)  
 
-- 📝 Input field to describe your post
-- 💡 Clickable suggestion cards (Promotional, Launch, etc.)
-- ✨ Mock AI-generated captions displayed as responses
-- ⏳ Shows a loading state while fetching
-- ✅ Separate components: input box, suggestions, actions, response box
-- 📦 Backend API with a POST endpoint at `/askAi`
-
+---
 
 ## 🧩 Technologies
+| Layer / Folder | Stack |
+|----------------|-------|
+| **frontend-task** | Angular 17 (stand‑alone components) |
+| **backend-task**  | NestJS 10 |
+| **task-2**        | Plain Node.js (FizzBuzz) |
+| Styling           | Custom CSS (no Bootstrap) |
 
-| Folder         | Description                                     |
-|----------------|-------------------------------------------------|
-| frontend-task  | Angular frontend app for the project            |
-| backend-task   | NestJS backend API handling AI prompt requests  |
-| task-2         | Standalone FizzBuzz script in JavaScript        |
-
-
+---
 
 ## 📂 File Structure
-
-
+```plaintext
 API-Project/
-├── frontend-task/          # Angular frontend
+├── frontend-task/
 │   └── src/app/
-│       ├── input-box/      # Text input and generate button component
-│       ├── suggestions/    # Suggested topic cards component
-│       ├── actions/        # Action buttons at the bottom
+│       ├── input-box/
+│       ├── suggestions/
+│       ├── actions/
 │       └── app.component.ts
 │
-├── backend-task/           # NestJS backend
+├── backend-task/
 │   └── src/
-│       ├── ask-ai/         # Controller handling /askAi endpoint
+│       ├── ask-ai/
 │       ├── app.module.ts
 │       └── main.ts
 │
-├── task-2/                 # Task 2 – FizzBuzz
-│   ├── index.js            # Entry point for FizzBuzz
-│   └── fizzbuzz.js         # FizzBuzz logic using multiples
+├── task-2/
+│   ├── index.js
+│   └── fizzbuzz.js
 │
 └── README.md
-
-
-
-
+```
