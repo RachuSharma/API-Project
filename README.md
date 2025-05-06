@@ -7,6 +7,17 @@ It was built for a small assignment to show how the frontend and backend work to
 
 ### 🚀 Getting Started
 ```bash
+
+### 🚀 Getting Started
+
+#### ▶️ Clone the Repository
+
+## To run this app, clone the repository and install dependencies
+
+git clone https://github.com/RachuSharma/API-Project.git
+cd API-Project
+
+
 ## ▶️ Running the Tasks
 
 ### Task 1 – Fullstack Application (Angular + NestJS)
